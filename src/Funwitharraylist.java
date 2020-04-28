@@ -13,15 +13,15 @@ public class Funwitharraylist {
         color.add("Green");
         color.add("Yelllow");
         //Using the array list created above, print out the value at index 1.
-        System.out.println(color.get(1));
+        System.out.println("The color at index 1 is "+ color.get(1));
         //Using the array list above, prompt the user for one new color, and add that color to the array list.
-        System.out.println("Please enter a color of your choice");
-        colors=scanner.nextLine();
-        color.add(colors);
+        //System.out.println("Please enter a color of your choice");
+        //colors=scanner.nextLine();
+        //color.add(colors);
         //Using the array list, continue prompting the user for colors until they type in "Q" or "q" to quit.
         // Each time the user enters a color, add that to the array list. Print out the list at the end.
         while(!(enter.equalsIgnoreCase("q"))){
-            System.out.println("Please enter a color of your choice");
+            System.out.println("Please enter a color of your choice to add in the list");
             colors=scanner.nextLine();
             color.add(colors);
             System.out.println("Type q/Q if you want to quit or type any thing else to continue");
@@ -30,7 +30,7 @@ public class Funwitharraylist {
         }
         for (String c:color
              ) {
-            System.out.println("Colors you addes thus far "+ c);
+            System.out.println("Colors you add thus far "+ c);
 
         }
     }
